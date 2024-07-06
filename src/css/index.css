@@ -1,0 +1,86 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+
+main, .boataoIniciar
+{
+    width: 70%;
+    margin: 2rem auto;
+    padding: 2rem 0;
+    display: flex;
+    flex: 6;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(102, 104, 119, 0.5);
+}
+
+main
+{
+    display: none;
+    position: relative;
+}
+
+#numeroDeTentativas
+{
+    font-size: 2rem;
+}
+
+main output
+{
+    width: 40rem;
+    max-width: 80%;
+    height: 8rem;
+    margin: 2rem auto;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    background-color: azure;
+    box-shadow: 1px 5px 15px rgba(26, 25, 25, 0.5);
+}
+
+main input
+{
+    padding: .3rem 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#botaoAdvinhar
+{
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+#iniciarJogo
+{
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#voltar
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+}
+
+#saidaInicial
+{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#paragrafoDificuldade
+{
+    margin-top: 1rem;
+}
