@@ -18,41 +18,52 @@ document.addEventListener("DOMContentLoaded", () =>
 
         botaoAdvinhar.addEventListener("click", () =>
             {
+             jogo()
+            })
+
+        entradaDoNumero.addEventListener("keydown", () =>
+        {
+            if (event.key === 'Enter')
+            {
+                jogo()
+            }
+        })    
+
+            function jogo()
+            {
                 if (entradaDoNumero.value != "")
-                {
-                    if (entradaDoNumero.value < numeroAleatorio)
                     {
-                        saida.innerHTML = "Digitaste um número menor"
-                    }
-                    else if (entradaDoNumero.value > numeroAleatorio)
-                    {
-                        saida.innerHTML = "Digitaste um número maior"
+                        if (entradaDoNumero.value < numeroAleatorio)
+                        {
+                            saida.innerHTML = "Digitaste um número menor"
+                        }
+                        else if (entradaDoNumero.value > numeroAleatorio)
+                        {
+                            saida.innerHTML = "Digitaste um número maior"
+                        }
+                        else
+                        {
+                            tentativas++
+                            sair(`<i class="fa-regular fa-face-laugh-beam"></i> <b>Parabéns</b>, o número é ${numeroAleatorio} <br> Click em <b>Start</b> para jogar novamente.`)
+                         
+                        }
+    
+                        tentativas--
+                        numeroDeTentativas.innerHTML = tentativas
+                        entradaDoNumero.value = ""
                     }
                     else
                     {
-                        tentativas++
-                        sair(`<i class="fa-regular fa-face-laugh-beam"></i> <b>Parabéns</b>, o número é ${numeroAleatorio} <br> Click em <b>Start</b> para jogar novamente.`)
-                     
+                        alert("O campo de entrada está vazio, digite um número!")
                     }
-
-                    tentativas--
-                    numeroDeTentativas.innerHTML = tentativas
-                    entradaDoNumero.value = ""
-                }
-                else
-                {
-                    alert("O campo de entrada está vazio, digite um número!")
-                }
-
-                if (tentativas === 0)
-                {
-
-                    sair(`<i class="fa-solid fa-face-sad-tear"></i> Você <b>perdeu</b>, o número é ${numeroAleatorio} <br> Click em <b>Start</b> para jogar novamente.`)
-                        
-                }
-            })
-
-
+    
+                    if (tentativas === 0)
+                    {
+    
+                        sair(`<i class="fa-solid fa-face-sad-tear"></i> Você <b>perdeu</b>, o número é ${numeroAleatorio} <br> Click em <b>Start</b> para jogar novamente.`)
+                            
+                    }
+            }
 
             function configuracoesIniciais()
             {
