@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () =>
                     else
                     {
                         sair(`<i class="fa-regular fa-face-laugh-beam"></i> <b>Parabén</b>, o numero é ${numeroAleatorio} <br> Click em <b>Start</b> para jogar novamente.`)
-                     
+                        tentativas++
                     }
 
                     tentativas--
