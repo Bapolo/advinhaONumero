@@ -5,6 +5,7 @@
     border-radius: 0;
     font-size: 20px;
     font-family: sans-serif;
+    overflow: hidden;
 }
 
 body
