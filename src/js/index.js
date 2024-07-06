@@ -22,16 +22,16 @@ document.addEventListener("DOMContentLoaded", () =>
                 {
                     if (entradaDoNumero.value < numeroAleatorio)
                     {
-                        saida.innerHTML = "Digitaste um numero menor"
+                        saida.innerHTML = "Digitaste um número menor"
                     }
                     else if (entradaDoNumero.value > numeroAleatorio)
                     {
-                        saida.innerHTML = "Digitaste um numero maior"
+                        saida.innerHTML = "Digitaste um número maior"
                     }
                     else
                     {
                         tentativas++
-                        sair(`<i class="fa-regular fa-face-laugh-beam"></i> <b>Parabén</b>, o numero é ${numeroAleatorio} <br> Click em <b>Start</b> para jogar novamente.`)
+                        sair(`<i class="fa-regular fa-face-laugh-beam"></i> <b>Parabéns</b>, o número é ${numeroAleatorio} <br> Click em <b>Start</b> para jogar novamente.`)
                      
                     }
 
@@ -41,13 +41,13 @@ document.addEventListener("DOMContentLoaded", () =>
                 }
                 else
                 {
-                    alert("O campo de entrada está vazio, digite um numero!")
+                    alert("O campo de entrada está vazio, digite um número!")
                 }
 
                 if (tentativas === 0)
                 {
 
-                    sair(`<i class="fa-solid fa-face-sad-tear"></i> Você <b>perdeu</b>, o numero é ${numeroAleatorio} <br> Click em <b>Start</b> para jogar novamente.`)
+                    sair(`<i class="fa-solid fa-face-sad-tear"></i> Você <b>perdeu</b>, o número é ${numeroAleatorio} <br> Click em <b>Start</b> para jogar novamente.`)
                         
                 }
             })
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () =>
                 console.log(numeroAleatorio)
                 numeroDeTentativas.innerHTML = tentativas
                 entradaDoNumero.value = ""
-                saida.innerHTML = `Escolha um valor entre 1 e 100 <br><i class="fa-solid fa-wand-magic-sparkles"></i>`
+                saida.innerHTML = `Escolha um número entre 1 e 100 <br><i class="fa-solid fa-wand-magic-sparkles"></i>`
             }
             
 
