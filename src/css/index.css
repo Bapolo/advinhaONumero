@@ -29,7 +29,10 @@ main, .boataoIniciar
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    background-color: rgba(52, 62, 134, 0.5);
+    border-radius: 10px;
+    outline: 1px solid rgba(25, 68, 28, 0.09);
+    box-shadow: 1px 5px 20px rgba(1, 1, 1, 0.15);
+    background-color: rgba(52, 62, 134, 0.2);
 }
 
 main
@@ -98,4 +101,17 @@ main input
 #paragrafoDificuldade
 {
     margin-top: 1rem;
+}
+
+button
+{
+    background-color: rgba(15, 16, 16, 0.86);
+    border: none;
+    border-radius: 15px;
+    color: white;
+}
+
+button:active
+{
+    transform: scale(1.12);
 }
