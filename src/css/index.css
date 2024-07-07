@@ -30,7 +30,7 @@ main, .boataoIniciar
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    outline: 1px solid rgba(25, 68, 28, 0.09);
+    border: 1px solid rgba(25, 68, 28, 0.09);
     box-shadow: 1px 5px 20px rgba(1, 1, 1, 0.15);
     background-color: rgba(52, 62, 134, 0.2);
 }
