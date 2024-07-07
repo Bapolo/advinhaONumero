@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () =>
         const saidaInicial = document.querySelector("#saidaInicial")
         const dificuldade = document.querySelector("select")
         const voltar = document.querySelector("#voltar")
-
+     
         let tentativas = 3
         let numeroAleatorio = Math.round(Math.random() * 100)
         
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () =>
                         else
                         {
                             tentativas++
-                            sair(`<i class="fa-regular fa-face-laugh-beam"></i> <b>Parabéns</b>, o número é ${numeroAleatorio} <br> Click em <b>Start</b> para jogar novamente.`)
+                            sair(`<i class="fa-regular fa-face-laugh-beam" style="color: #15ac1a;"></i> <b style="color: #15ac1a;">Parabéns</b>, o número é ${numeroAleatorio} <br> Click em <b>Start</b> para jogar novamente.`)
                          
                         }
     
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () =>
                     if (tentativas === 0)
                     {
     
-                        sair(`<i class="fa-solid fa-face-sad-tear"></i> Você <b>perdeu</b>, o número é ${numeroAleatorio} <br> Click em <b>Start</b> para jogar novamente.`)
+                        sair(`<i class="fa-solid fa-face-sad-tear" style="color: #a30c0c;"></i> Você <b style="color: #a30c0c;>perdeu</b>, o número é ${numeroAleatorio} <br> Click em <b>Start</b> para jogar novamente.`)
                             
                     }
             }
@@ -71,7 +71,6 @@ document.addEventListener("DOMContentLoaded", () =>
                 boataoIniciar.style.display = "none"
                 tentativas = dificuldade.value
                 numeroAleatorio = Math.round(Math.random() * 100)
-                console.log(numeroAleatorio)
                 numeroDeTentativas.innerHTML = tentativas
                 entradaDoNumero.value = ""
                 saida.innerHTML = `Escolha um número entre 1 e 100 <br><i class="fa-solid fa-wand-magic-sparkles"></i>`

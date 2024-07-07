@@ -29,7 +29,7 @@ main, .boataoIniciar
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    background-color: rgba(102, 104, 119, 0.5);
+    background-color: rgba(52, 62, 134, 0.5);
 }
 
 main
@@ -48,9 +48,9 @@ main output
     width: 40rem;
     max-width: 80%;
     height: 8rem;
-    margin: 2rem auto;
-    padding: 1rem;
-    font-size: 2rem;
+    margin: 0.8rem auto;
+    padding: 1rem 0.4rem;
+    font-size: 1.3rem;
     text-align: center;
     vertical-align: middle;
     color: black;
