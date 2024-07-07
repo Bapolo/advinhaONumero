@@ -60,8 +60,8 @@ document.addEventListener("DOMContentLoaded", () =>
                     if (tentativas === 0)
                     {
     
-                        sair(`<i class="fa-solid fa-face-sad-tear" style="color: #a30c0c;"></i> Você <b style="color: #a30c0c;>perdeu</b>, o número é ${numeroAleatorio} <br> Click em <b>Start</b> para jogar novamente.`)
-                            
+                        sair(`<i class="fa-regular fa-face-sad-tear" style="color: #a30c0c;"></i> <b style="color: #a30c0c;">Perdeu</b>, o número é ${numeroAleatorio} <br> Click em <b>Start</b> para jogar novamente.`)
+                                                    
                     }
             }
 
